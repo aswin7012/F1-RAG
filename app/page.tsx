@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import f1gptLogo from "./assets/logo.jpeg";
-import { useChat } from "ai/react";
+import { useChat } from "@ai-sdk/react";
 import { Message } from "ai";
 import PromptSuggestionRow from "./components/PromptSugggestionsRow";
 import LoadingBubble from "./components/LoadingBubble";

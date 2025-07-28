@@ -1,18 +1,20 @@
 import "./global.css";
+import { ReactNode } from "react";
 
 export const metadata = {
-    title :"F1GPT",
-    description: "F1GPT is a chatbot that provides information about Formula 1"
+  title: "F1GPT",
+  decription: "This is all formula one questions"
 }
 
-const RootLayout = ({ children }: { children: React.ReactNode }) => {
-    return (
-        <html lang="en">
-            <body>
-                {children}
-            </body>
-        </html>
-    );
+const RootLayout = ({ children }: { children: ReactNode }) => {
+  return (
+    <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      </head>
+      <body>{children}</body>
+    </html>
+  )
 }
 
-export default RootLayout;
+export default RootLayout

@@ -7,7 +7,7 @@ import "dotenv/config";
 
 type SimilarityMetric = "dot_product" | "cosine" | "euclidean";
 
-const { ASTRA_DB_NAMESPACE, ASTRA_DB_COLLECTION, ASTRA_DB_API_ENDPOINT, ASTRA_DB_APPLICATION_TOKEN, OPENAI_API_KEY } = process.env;
+const { ASTRA_DB_NAMESPACE, ASTRA_DB_COLLECTION, ASTRA_DB_API_ENDPOINT, ASTRA_DB_APPLICATION_TOKEN } = process.env;
 
 const f1gptdata = [
   "https://en.wikipedia.org/wiki/Formula_One",

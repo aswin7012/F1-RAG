@@ -1,6 +1,10 @@
 import PromptSuggestionButton from "./PromptSuggestionButton";
 
-const PromptSuggestionRow = ({ onPromptClick }: any) => {
+interface PromptSuggestionRowProps {
+  onPromptClick: (prompt: string) => void;
+}
+
+const PromptSuggestionRow = ({ onPromptClick }: PromptSuggestionRowProps) => {
   const prompts = [
     "Who is head of racing for Aston Martin's F1 Academy team?",
     "Who is the highest paid F1 driver?",

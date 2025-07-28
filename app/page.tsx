@@ -3,15 +3,16 @@ import Image from "next/image";
 import f1gptLogo from "./assets/logo.jpeg";
 import { useChat } from "@ai-sdk/react";
 import { Message } from "ai";
-import PromptSuggestionRow from "./components/PromptSugggestionsRow";
+import PromptSuggestionRow from "./components/PromptSuggestionRow";
 import LoadingBubble from "./components/LoadingBubble";
 import Bubble from "./components/Bubble";
 
 
 const Home = () => {
-  const { append, isLoading, messages, input, handleInputChange, handleSubmit } = useChat();
+  const { append, status, messages, input, handleInputChange, handleSubmit } = useChat();
 
   const noMessages = !messages || messages.length === 0;
+  const isLoading = status === 'streaming' || status === 'submitted';
 
   const handlePromptClicked = (text: string) => {
     const msg: Message = {

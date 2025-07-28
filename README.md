@@ -8,7 +8,7 @@ npm install
 ```
 
 ### 2. Set Environment Variables
-Create a `.env` file with your credentains as required in exxample env:
+Create a `.env` file with your credentains as required in example env:
 
 ### 3. Seed the Database
 ```bash
